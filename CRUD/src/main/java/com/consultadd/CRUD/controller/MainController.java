@@ -26,6 +26,10 @@ public class MainController {
     @Autowired
     StudentService studentService;
 
+    @GetMapping("/")
+    public ResponseEntity<String> home(){
+        return new ResponseEntity<>("Working!",HttpStatus.OK);
+    }
     @PostMapping("/addStudent")
     public Student sendWelcome(@RequestBody Student student){
         return studentService.addStudent(student);
