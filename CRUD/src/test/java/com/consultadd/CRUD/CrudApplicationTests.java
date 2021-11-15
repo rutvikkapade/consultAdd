@@ -15,6 +15,6 @@ class CrudApplicationTests {
 	@Test
 	void printStuff(){
 		BCryptPasswordEncoder passwordEncoder=new BCryptPasswordEncoder();
-		System.out.println(passwordEncoder.encode("root"));
+		System.out.println(passwordEncoder.encode("root2"));
 	}
 }
